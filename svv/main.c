@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "funcoes.h"
+
 
 enum { LARGURA, ALTURA, MAX_ITERACOES ,NUM_THREADS};
 
@@ -22,9 +24,7 @@ int main(int argc, char **argv){
             exit(1);
         }
     }
-
-    for(int i = 0; i < 4; i++){
-        printf("%d ", array_numeros[i]);
-    }
+    int resultado = mandelbrot_ponto(0.0, 0.0, 10);
+    printf("resultado: %d\n", resultado);
     return 0;
 }
