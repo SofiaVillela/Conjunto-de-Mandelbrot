@@ -29,9 +29,10 @@ int main(int argc, char **argv){
             double c_real = -2.0 + ((double)px / (array_numeros[LARGURA] - 1)) * (1.0 - (-2.0));
             double c_imag = -1.5 + ((double)py / (array_numeros[ALTURA] - 1)) * (1.5 - (-1.5));
             int resultado = mandelbrot_ponto(c_real, c_imag, array_numeros[MAX_ITERACOES]);
-            
-        
+            int intensidade = (int)(((double)resultado / array_numeros[MAX_ITERACOES] ) * 255);
         }
     }
+
+
     return 0;
 }
