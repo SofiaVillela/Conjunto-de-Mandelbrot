@@ -8,7 +8,7 @@ enum { LARGURA, ALTURA, MAX_ITERACOES ,NUM_THREADS};
 
 int main(int argc, char **argv){
     if(argc != 5){
-        fprintf(stderr, "erro, quantidade insuficiente de argumentos.\n");
+        fprintf(stderr, "erro: quantidade insuficiente de argumentos.\n");
         exit(1);
     }
     char *endptr;
@@ -24,15 +24,22 @@ int main(int argc, char **argv){
             exit(1);
         }
     }
+    FILE *file = fopen("mandelbrot_svv_serial.pgm", "w");
+    if(file == NULL){
+        fprintf(stderr, "erro: não foi possivel abrir o arquivo.\n");
+        exit(1);
+    }
     for (int py = 0; py < array_numeros[ALTURA]; py++) {
         for (int px = 0; px < array_numeros[LARGURA]; px++) {
             double c_real = -2.0 + ((double)px / (array_numeros[LARGURA] - 1)) * (1.0 - (-2.0));
             double c_imag = -1.5 + ((double)py / (array_numeros[ALTURA] - 1)) * (1.5 - (-1.5));
             int resultado = mandelbrot_ponto(c_real, c_imag, array_numeros[MAX_ITERACOES]);
             int intensidade = (int)(((double)resultado / array_numeros[MAX_ITERACOES] ) * 255);
+            fprintf(file, "%d " ,intensidade);
         }
+        fprintf(file, "\n");
     }
 
-
+    fclose(file);
     return 0;
 }
