@@ -24,7 +24,8 @@ int main(int argc, char **argv){
             exit(1);
         }
     }
-    int resultado = mandelbrot_ponto(0.0, 0.0, 10);
-    printf("resultado: %d\n", resultado);
+    printf("resultado: %d\n", mandelbrot_ponto(0.0, 0.0, 1000));
+    printf("resultado: %d\n", mandelbrot_ponto(2.0, 2.0, 1000));
+    printf("resultado: %d\n", mandelbrot_ponto(-1.0, 0.0, 1000));
     return 0;
 }

@@ -1,0 +1,163 @@
+Script started on 2026-08-28 18:12:00-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="182" LINES="18"]
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [7mdate[27mdate
+[?2004l
+Fri Aug 28 18:12:07 -03 2026
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [7mwhoami[27mwhoami
+[?2004l
+sofiavillela
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ pwd
+[?2004l
+/home/sofiavillela/Conjunto-de-Mandelbrot/svv
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [7mgcc main.c funcoes.c -o mandelbrot[27mgcc main.c funcoes.c -o mandelbrot
+[?2004l
+/usr/bin/x86_64-linux-gnu-ld.bfd: /tmp/ccWr9YdQ.o: in function `mandelbrot_ponto':
+funcoes.c:(.text+0x4b): undefined reference to `pow'
+/usr/bin/x86_64-linux-gnu-ld.bfd: funcoes.c:(.text+0x6a): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [7mgcc main.c funcoes.c -o mandelbrot -lm[27mgcc main.c funcoes.c -o mandelbrot -lm
+[?2004l
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [7m./mandelbrot 200 200 500 4[27m./mandelbrot 200 200 500 4
+[?2004l
+resultado: 10
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ git add .
+[?2004l
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ git commit -m fe[K[K"[K'feat: wip[K[K[K[K[K[K[K[K[Kwip: [7mmandelbrot_ponto[27mmandelbrot_ponto, funcoes.c e .h'
+[?2004l
+[main 0632209] wip: mandelbrot_ponto, funcoes.c e .h
+ 5 files changed, 29 insertions(+), 195 deletions(-)
+ create mode 100644 svv/funcoes.c
+ create mode 100644 svv/funcoes.h
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gir[Kt oush[K[K[K[Kpush
+[?2004l
+Enumerating objects: 13, done.
+Counting objects:   7% (1/13)
+Counting objects:  15% (2/13)
+Counting objects:  23% (3/13)
+Counting objects:  30% (4/13)
+Counting objects:  38% (5/13)
+Counting objects:  46% (6/13)
+Counting objects:  53% (7/13)
+Counting objects:  61% (8/13)
+Counting objects:  69% (9/13)
+Counting objects:  76% (10/13)
+Counting objects:  84% (11/13)
+Counting objects:  92% (12/13)
+Counting objects: 100% (13/13)
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects:  16% (1/6)
+Compressing objects:  33% (2/6)
+Compressing objects:  50% (3/6)
+Compressing objects:  66% (4/6)
+Compressing objects:  83% (5/6)
+Compressing objects: 100% (6/6)
+Compressing objects: 100% (6/6), done.
+Writing objects:  12% (1/8)
+Writing objects:  25% (2/8)
+Writing objects:  37% (3/8)
+Writing objects:  50% (4/8)
+Writing objects:  62% (5/8)
+Writing objects:  75% (6/8)
+Writing objects:  87% (7/8)
+Writing objects: 100% (8/8)
+Writing objects: 100% (8/8), 2.47 KiB | 1.24 MiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[K
+remote: Resolving deltas:  50% (1/2)[K
+remote: Resolving deltas: 100% (2/2)[K
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/SofiaVillela/Conjunto-de-Mandelbrot.git
+   bdfab4f..0632209  main -> main
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ exit
+[?2004l
+exit
+
+Script done on 2026-08-28 18:16:02-03:00 [COMMAND_EXIT_CODE="0"]
+
+Script started on 2026-08-29 14:07:17-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="182" LINES="18"]
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-29 14:07:22-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-29 14:08:02-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="182" LINES="18"]
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ exit./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lmexit[K./mandelbrot 200 200 500 4
+[?2004lresultado: 10
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ ./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[12P./mandelbrot 200 200 500 4
+[?2004literacao 0: z_real=0.000000 z_imag=0.000000
+iteracao 1: z_real=0.000000 z_imag=0.000000
+iteracao 2: z_real=0.000000 z_imag=0.000000
+iteracao 3: z_real=0.000000 z_imag=0.000000
+iteracao 4: z_real=0.000000 z_imag=0.000000
+iteracao 5: z_real=0.000000 z_imag=0.000000
+iteracao 6: z_real=0.000000 z_imag=0.000000
+iteracao 7: z_real=0.000000 z_imag=0.000000
+iteracao 8: z_real=0.000000 z_imag=0.000000
+iteracao 9: z_real=0.000000 z_imag=0.000000
+resultado: 10
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ ./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[12P./mandelbrot 200 200 500 4
+[?2004literacao 0: z_real=0.500000 z_imag=0.000000
+iteracao 1: z_real=0.750000 z_imag=0.000000
+iteracao 2: z_real=1.062500 z_imag=0.000000
+iteracao 3: z_real=1.628906 z_imag=0.000000
+iteracao 4: z_real=3.153336 z_imag=0.000000
+iteracao 5: z_real=10.443525 z_imag=0.000000
+iteracao 6: z_real=109.567219 z_imag=0.000000
+iteracao 7: z_real=12005.475508 z_imag=0.000000
+iteracao 8: z_real=144131442.662390 z_imag=0.000000
+iteracao 9: z_real=20773872763941816.000000 z_imag=0.000000
+resultado: 10
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ ./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[12P./mandelbrot 200 200 500 4
+[?2004literacao 0: z_real=0.500000 z_imag=0.500000
+iteracao 1: z_real=0.500000 z_imag=1.000000
+iteracao 2: z_real=-0.250000 z_imag=0.000000
+iteracao 3: z_real=0.562500 z_imag=0.500000
+iteracao 4: z_real=0.566406 z_imag=1.066406
+iteracao 5: z_real=-0.316406 z_imag=-0.174835
+iteracao 6: z_real=0.569546 z_imag=0.300847
+iteracao 7: z_real=0.733873 z_imag=0.941567
+iteracao 8: z_real=0.152022 z_imag=0.786278
+iteracao 9: z_real=-0.095122 z_imag=0.350415
+resultado: 10
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ ./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.cScript started on 2026-08-29 14:42:30-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="182" LINES="5"]
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ exit./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lmexit[K./mandelbrot 200 200 500 4
+[?2004literacao 0: z_real=0.500000 z_imag=0.500000
+iteracao 1: z_real=0.500000 z_imag=1.000000
+iteracao 2: z_real=-0.250000 z_imag=1.500000
+iteracao 3: z_real=-1.687500 z_imag=-0.250000
+iteracao 4: z_real=3.285156 z_imag=1.343750
+resultado: 4
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ ./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lmexit[K
+[?2004lexit
+
+Script done on 2026-08-29 14:42:37-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-29 14:42:39-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="182" LINES="5"]
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ exit./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:28:11:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 1 of ‘[01m[Krintf[m[K’
+   28 |     rintf([01;34m[K"[m[K[01;34m[Kr[m[K[01;34m[Ke[m[K[01;34m[Ks[m[K[01;34m[Ku[m[K[01;34m[Kl[m[K[01;34m[Kt[m[K[01;34m[Ka[m[K[01;34m[Kd[m[K[01;34m[Ko[m[K[01;34m[K:[m[K[01;34m[K [m[K[01;34m[K%[m[K[01;34m[Kd[m[K[01;34m[K\[m[K[01;34m[Kn[m[K[01;34m[K"[m[K, mandelbrot_ponto(2.0, 2.0, 1000));
+      |           [01;34m[K^[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |           [01;34m[K|[m[K
+      |           [01;34m[Kchar *[m[K
+In file included from [01m[K/usr/include/math.h:443[m[K,
+                 from [01m[Kmain.c:3[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:313:1:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kfloat[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kchar *[m[K[m[K’
+  313 | [01;32m[K_[m[K_MATHCALL (rint,, (_Mdouble_ __x));
+      | [01;32m[K^[m[K
+[01m[Kmain.c:28:5:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function ‘[01m[Krintf[m[K’; expected 1, have 2
+   28 |     [01;31m[Krintf[m[K("resultado: %d\n", [32m[Kmandelbrot_ponto(2.0, 2.0, 1000)[m[K);
+      |     [01;31m[K^~~~~[m[K                    [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:313:1:[m[K [01;36m[Knote: [m[Kdeclared here
+  313 | [01;36m[K__MATHCALL[m[K (rint,, (_Mdouble_ __x));
+      | [01;36m[K^~~~~~~~~~[m[K
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lmexit[K./mandelbrot 200 200 500 4
+[?2004lresultado: 1000
+resultado: 0
+resultado: 1000
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillel

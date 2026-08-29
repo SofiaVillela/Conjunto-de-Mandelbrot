@@ -11,9 +11,12 @@ int mandelbrot_ponto(double c_real, double c_imag, int max_iter){
 
     int i;
     for(i= 0; i < max_iter; i++){
-        z_real = ((pow(z_real, 2) - pow(z_imag, 2)) + c_real);
-        z_imag = (2 * z_real * z_imag) * c_imag; 
-        
+        double temp = z_real;
+        z_real = ((pow(temp, 2) - pow(z_imag, 2)) + c_real);
+        z_imag = (2 * temp * z_imag) + c_imag; 
+        if((pow(z_real, 2) + pow(z_imag, 2)) > 4){
+            return i;
+        } 
     }
     return i;
 }
