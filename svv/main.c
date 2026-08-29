@@ -24,8 +24,14 @@ int main(int argc, char **argv){
             exit(1);
         }
     }
-    printf("resultado: %d\n", mandelbrot_ponto(0.0, 0.0, 1000));
-    printf("resultado: %d\n", mandelbrot_ponto(2.0, 2.0, 1000));
-    printf("resultado: %d\n", mandelbrot_ponto(-1.0, 0.0, 1000));
+    for (int py = 0; py < array_numeros[ALTURA]; py++) {
+        for (int px = 0; px < array_numeros[LARGURA]; px++) {
+            double c_real = -2.0 + ((double)px / (array_numeros[LARGURA] - 1)) * (1.0 - (-2.0));
+            double c_imag = -1.5 + ((double)py / (array_numeros[ALTURA] - 1)) * (1.5 - (-1.5));
+            int resultado = mandelbrot_ponto(c_real, c_imag, array_numeros[MAX_ITERACOES]);
+            
+        
+        }
+    }
     return 0;
 }

@@ -160,4 +160,179 @@ In file included from [01m[K/usr/include/math.h:443[m[K,
 [?2004lresultado: 1000
 resultado: 0
 resultado: 1000
-[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillel
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillelScript started on 2026-08-29 16:14:08-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="164" LINES="1"]
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ git push<it commit -m "fix: corrige ordem de atualizacao e soma no calculo de z_imag; adiciona criterio de escape"[K[39P]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ git add ../mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm[14Pscript -a evidencias.log[Kgcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[01m[Kfuncoes.c:[m[K In function ‘[01m[Kmandelbrot_ponto[m[K’:
+[01m[Kfuncoes.c:15:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx[m[K’ undeclared (first use in this function)
+   15 |         double c_real = -2.0 + ((double)[01;31m[Kpx[m[K / (LARGURA - 1)) * (1.0 - (-2.0));
+      |                                         [01;31m[K^~[m[K
+[01m[Kfuncoes.c:15:41:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kfuncoes.c:15:47:[m[K [01;31m[Kerror: [m[K‘[01m[KLARGURA[m[K’ undeclared (first use in this function)
+   15 |         double c_real = -2.0 + ((double)px / ([01;31m[KLARGURA[m[K - 1)) * (1.0 - (-2.0));
+      |                                               [01;31m[K^~~~~~~[m[K
+[01m[Kfuncoes.c:16:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kpy[m[K’ undeclared (first use in this function)
+   16 |         double c_imag = -2.0 + ((double)[01;31m[Kpy[m[K / (ALTURA - 1)) * (-1.5 - (-1.5));
+      |                                         [01;31m[K^~[m[K
+[01m[Kfuncoes.c:16:47:[m[K [01;31m[Kerror: [m[K‘[01m[KALTURA[m[K’ undeclared (first use in this function)
+   16 |         double c_imag = -2.0 + ((double)py / ([01;31m[KALTURA[m[K - 1)) * (-1.5 - (-1.5));
+      |                                               [01;31m[K^~~~~~[m[K
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lmit push[K<it commit -m "fix: corrige ordem de atualizacao e soma no calculo de z_imag; adiciona criterio de escape"[K[39P]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ git add .<it commit -m "fix: corrige ordem de atualizacao e soma no calculo de z_imag; adiciona criterio de escape"[K[40P]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ git pushcc main.c funcoes.c -o mandelbrot -lm[Kgcc main.c funcoes.c -o mandelbrot -lmit push[K<it commit -m "fix: corrige ordem de atualizacao e soma no calculo de z_imag; adiciona criterio de escape"[K[39P]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ git add ../mandelbrot 200 200 500 4
+[?2004lresultado: 1000
+resultado: 0
+resultado: 1000
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ ./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[01m[Kfuncoes.c:[m[K In function ‘[01m[Kmandelbrot_ponto[m[K’:
+[01m[Kfuncoes.c:15:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx[m[K’ undeclared (first use in this function)
+   15 |         double c_real = -2.0 + ((double)[01;31m[Kpx[m[K / (LARGURA - 1)) * (1.0 - (-2.0));
+      |                                         [01;31m[K^~[m[K
+[01m[Kfuncoes.c:15:41:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kfuncoes.c:15:47:[m[K [01;31m[Kerror: [m[K‘[01m[KLARGURA[m[K’ undeclared (first use in this function)
+   15 |         double c_real = -2.0 + ((double)px / ([01;31m[KLARGURA[m[K - 1)) * (1.0 - (-2.0));
+      |                                               [01;31m[K^~~~~~~[m[K
+[01m[Kfuncoes.c:16:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kpy[m[K’ undeclared (first use in this function)
+   16 |         double c_imag = -2.0 + ((double)[01;31m[Kpy[m[K / (ALTURA - 1)) * (-1.5 - (-1.5));
+      |                                         [01;31m[K^~[m[K
+[01m[Kfuncoes.c:16:47:[m[K [01;31m[Kerror: [m[K‘[01m[KALTURA[m[K’ undeclared (first use in this function)
+   16 |         double c_imag = -2.0 + ((double)py / ([01;31m[KALTURA[m[K - 1)) * (-1.5 - (-1.5));
+      |                                               [01;31m[K^~~~~~[m[K
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[01m[Kfuncoes.c:8:5:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kmandelbrot_ponto[m[K’; have ‘[01m[Kint(double,  double,  int,  int *)[m[K’
+    8 | int [01;31m[Kmandelbrot_ponto[m[K(double c_real, double c_imag, int max_iter, int *array_numeros){
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[Kfuncoes.c:4[m[K:
+[01m[Kfuncoes.h:4:5:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kmandelbrot_ponto[m[K’ with type ‘[01m[Kint(double,  double,  int)[m[K’
+    4 | int [01;36m[Kmandelbrot_ponto[m[K(double c_real, double c_imag, int max_iter);
+      |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[Kfuncoes.c:[m[K In function ‘[01m[Kmandelbrot_ponto[m[K’:
+[01m[Kfuncoes.c:15:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx[m[K’ undeclared (first use in this function)
+   15 |         double c_real = -2.0 + ((double)[01;31m[Kpx[m[K / (LARGURA - 1)) * (1.0 - (-2.0));
+      |                                         [01;31m[K^~[m[K
+[01m[Kfuncoes.c:15:41:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kfuncoes.c:15:47:[m[K [01;31m[Kerror: [m[K‘[01m[KLARGURA[m[K’ undeclared (first use in this function)
+   15 |         double c_real = -2.0 + ((double)px / ([01;31m[KLARGURA[m[K - 1)) * (1.0 - (-2.0));
+      |                                               [01;31m[K^~~~~~~[m[K
+[01m[Kfuncoes.c:16:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kpy[m[K’ undeclared (first use in this function)
+   16 |         double c_imag = -2.0 + ((double)[01;31m[Kpy[m[K / (ALTURA - 1)) * (-1.5 - (-1.5));
+      |                                         [01;31m[K^~[m[K
+[01m[Kfuncoes.c:16:47:[m[K [01;31m[Kerror: [m[K‘[01m[KALTURA[m[K’ undeclared (first use in this function)
+   16 |         double c_imag = -2.0 + ((double)py / ([01;31m[KALTURA[m[K - 1)) * (-1.5 - (-1.5));
+      |                                               [01;31m[K^~~~~~[m[K
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[12P./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[01m[Kfuncoes.c:8:5:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kmandelbrot_ponto[m[K’; have ‘[01m[Kint(double,  double,  int,  int *)[m[K’
+    8 | int [01;31m[Kmandelbrot_ponto[m[K(double c_real, double c_imag, int max_iter, int *array_numeros){
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[Kfuncoes.c:4[m[K:
+[01m[Kfuncoes.h:4:5:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kmandelbrot_ponto[m[K’ with type ‘[01m[Kint(double,  double,  int)[m[K’
+    4 | int [01;36m[Kmandelbrot_ponto[m[K(double c_real, double c_imag, int max_iter);
+      |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[Kfuncoes.c:[m[K In function ‘[01m[Kmandelbrot_ponto[m[K’:
+[01m[Kfuncoes.c:15:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx[m[K’ undeclared (first use in this function)
+   15 |         double c_real = -2.0 + ((double)[01;31m[Kpx[m[K / (array_numeros[LARGURA] - 1)) * (1.0 - (-2.0));
+      |                                         [01;31m[K^~[m[K
+[01m[Kfuncoes.c:15:41:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kfuncoes.c:15:61:[m[K [01;31m[Kerror: [m[K‘[01m[KLARGURA[m[K’ undeclared (first use in this function)
+   15 |         double c_real = -2.0 + ((double)px / (array_numeros[[01;31m[KLARGURA[m[K] - 1)) * (1.0 - (-2.0));
+      |                                                             [01;31m[K^~~~~~~[m[K
+[01m[Kfuncoes.c:16:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kpy[m[K’ undeclared (first use in this function)
+   16 |         double c_imag = -2.0 + ((double)[01;31m[Kpy[m[K / (array_numeros[ALTURA] - 1)) * (-1.5 - (-1.5));
+      |                                         [01;31m[K^~[m[K
+[01m[Kfuncoes.c:16:61:[m[K [01;31m[Kerror: [m[K‘[01m[KALTURA[m[K’ undeclared (first use in this function)
+   16 |         double c_imag = -2.0 + ((double)py / (array_numeros[[01;31m[KALTURA[m[K] - 1)) * (-1.5 - (-1.5));
+      |                                                             [01;31m[K^~~~~~[m[K
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[01m[Kfuncoes.c:8:5:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kmandelbrot_ponto[m[K’; have ‘[01m[Kint(double,  double,  int,  int *)[m[K’
+    8 | int [01;31m[Kmandelbrot_ponto[m[K(double c_real, double c_imag, int max_iter, int *array_numeros){
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[Kfuncoes.c:4[m[K:
+[01m[Kfuncoes.h:4:5:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kmandelbrot_ponto[m[K’ with type ‘[01m[Kint(double,  double,  int)[m[K’
+    4 | int [01;36m[Kmandelbrot_ponto[m[K(double c_real, double c_imag, int max_iter);
+      |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[Kfuncoes.c:[m[K In function ‘[01m[Kmandelbrot_ponto[m[K’:
+[01m[Kfuncoes.c:15:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx[m[K’ undeclared (first use in this function)
+   15 |         double c_real = -2.0 + ((double)[01;31m[Kpx[m[K / (array_numeros[LARGURA] - 1)) * (1.0 - (-2.0));
+      |                                         [01;31m[K^~[m[K
+[01m[Kfuncoes.c:15:41:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kfuncoes.c:15:61:[m[K [01;31m[Kerror: [m[K‘[01m[KLARGURA[m[K’ undeclared (first use in this function)
+   15 |         double c_real = -2.0 + ((double)px / (array_numeros[[01;31m[KLARGURA[m[K] - 1)) * (1.0 - (-2.0));
+      |                                                             [01;31m[K^~~~~~~[m[K
+[01m[Kfuncoes.c:16:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kpy[m[K’ undeclared (first use in this function)
+   16 |         double c_imag = -1.5 + ((double)[01;31m[Kpy[m[K / (array_numeros[ALTURA] - 1)) * (1.5 - (-1.5));
+      |                                         [01;31m[K^~[m[K
+[01m[Kfuncoes.c:16:61:[m[K [01;31m[Kerror: [m[K‘[01m[KALTURA[m[K’ undeclared (first use in this function)
+   16 |         double c_imag = -1.5 + ((double)py / (array_numeros[[01;31m[KALTURA[m[K] - 1)) * (1.5 - (-1.5));
+      |                                                             [01;31m[K^~~~~~[m[K
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[12P./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:27:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx[m[K’ undeclared (first use in this function)
+   27 |     double c_real = -2.0 + ((double)[01;31m[Kpx[m[K / (array_numeros[LARGURA] - 1)) * (1.0 - (-2.0));
+      |                                     [01;31m[K^~[m[K
+[01m[Kmain.c:27:37:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:28:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kpy[m[K’ undeclared (first use in this function)
+   28 |     double c_imag = -1.5 + ((double)[01;31m[Kpy[m[K / (array_numeros[ALTURA] - 1)) * (1.5 - (-1.5));
+      |                                     [01;31m[K^~[m[K
+[01m[Kfuncoes.c:8:5:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kmandelbrot_ponto[m[K’; have ‘[01m[Kint(double,  double,  int,  int *)[m[K’
+    8 | int [01;31m[Kmandelbrot_ponto[m[K(double c_real, double c_imag, int max_iter, int *array_numeros){
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[Kfuncoes.c:4[m[K:
+[01m[Kfuncoes.h:4:5:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kmandelbrot_ponto[m[K’ with type ‘[01m[Kint(double,  double,  int)[m[K’
+    4 | int [01;36m[Kmandelbrot_ponto[m[K(double c_real, double c_imag, int max_iter);
+      |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[12P./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:27:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx[m[K’ undeclared (first use in this function)
+   27 |     double c_real = -2.0 + ((double)[01;31m[Kpx[m[K / (array_numeros[LARGURA] - 1)) * (1.0 - (-2.0));
+      |                                     [01;31m[K^~[m[K
+[01m[Kmain.c:27:37:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:28:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kpy[m[K’ undeclared (first use in this function)
+   28 |     double c_imag = -1.5 + ((double)[01;31m[Kpy[m[K / (array_numeros[ALTURA] - 1)) * (1.5 - (-1.5));
+      |                                     [01;31m[K^~[m[K
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:27:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kaltura[m[K’ undeclared (first use in this function)
+   27 |     for (int py = 0; py < [01;31m[Kaltura[m[K; py++) {
+      |                           [01;31m[K^~~~~~[m[K
+[01m[Kmain.c:27:27:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:28:31:[m[K [01;31m[Kerror: [m[K‘[01m[Klargura[m[K’ undeclared (first use in this function)
+   28 |         for (int px = 0; px < [01;31m[Klargura[m[K; px++) {
+      |                               [01;31m[K^~~~~~~[m[K
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[12P./mandelbrot 200 200 500 4
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ ./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[12P./mandelbrot 200 200 500 4
+ 1 resultado=1
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [?2004l
+exit
+
+Script done on 2026-08-29 16:24:41-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-29 16:41:15-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="182" LINES="27"]
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ nano evidencias.logcd svv[Knano evidencias.logcd svv[Kscript -a evidencias.logcd svv[Knano evidencias.log./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[19Pnano evidencias.logcd svv[Knano evidencias.logcd svv[Kscript -a evidencias.logcd svv[Knano evidencias.logcd svv[Knano evidencias.loggcc main.c funcoes.c -o mandelbrot -lm[K[7m./mandelbrot 5 5 100 4[27m./mandelbrot 5 5 100 4
+[?2004lpx=0 py=0 resultado=0
+px=1 py=0 resultado=1
+px=2 py=0 resultado=1
+px=3 py=0 resultado=1
+px=4 py=0 resultado=1
+px=0 py=1 resultado=0
+px=1 py=1 resultado=2
+px=2 py=1 resultado=5
+px=3 py=1 resultado=4
+px=4 py=1 resultado=1
+px=0 py=2 resultado=100
+px=1 py=2 resultado=100
+px=2 py=2 resultado=100
+px=3 py=2 resultado=100
+px=4 py=2 resultado=2
+px=0 py=3 resultado=0
+px=1 py=3 resultado=2
+px=2 py=3 resultado=5
+px=3 py=3 resultado=4
+px=4 py=3 resultado=1
+px=0 py=4 resultado=0
+px=1 py=4 resultado=1
+px=2 py=4 resultado=1
+px=3 py=4 resultado=1
+px=4 py=4 resultado=1
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-29 16:41:30-03:00 [COMMAND_EXIT_CODE="0"]
