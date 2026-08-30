@@ -15,6 +15,8 @@ int main(int argc, char **argv){
     }
     char *endptr;
     int array_numeros[4];
+
+    
     for(int i = 0, j = 1; i < 4; i++, j++){
         array_numeros[i] =  strtol(argv[j], &endptr, 10);
         if(*endptr != '\0'){
@@ -26,24 +28,33 @@ int main(int argc, char **argv){
             exit(1);
         }
     }
+
+    int *array_instensidades = malloc(array_numeros[LARGURA] * array_numeros[ALTURA] * sizeof(int));
+    if(array_instensidades == NULL){
+        fprintf(stderr, "erro: nao foi possivel alocar memoria para o array\n");
+        exit(1);
+    }
+
     FILE *file = fopen("mandelbrot_svv_serial.pgm", "w");
     if(file == NULL){
         fprintf(stderr, "erro: não foi possivel abrir o arquivo.\n");
         exit(1);
     }
     clock_gettime(CLOCK_MONOTONIC, &inicio);
-    mandelbrot_serial(array_numeros[ALTURA], array_numeros[LARGURA], array_numeros[MAX_ITERACOES], file);
+    mandelbrot_serial(array_numeros[ALTURA], array_numeros[LARGURA], array_numeros[MAX_ITERACOES], array_instensidades);
     clock_gettime(CLOCK_MONOTONIC, &fim);
+    escreve_pgm(array_numeros[LARGURA], array_numeros[ALTURA], array_instensidades, file);
     fclose(file);
 
     double tempo_gasto = (fim.tv_sec - inicio.tv_sec) + (fim.tv_nsec - inicio.tv_nsec) / 1e9;
     
     FILE *file_time = fopen("times.txt", "a");
     if(file_time == NULL){
-        fprintf(stderr, "erro: nao foi possivel abrir o arquivo");
+        fprintf(stderr, "erro: nao foi possivel abrir o arquivo\n");
         exit(1);
     }
     fprintf(file_time, "%lf ", tempo_gasto);
     fclose(file_time);  
+
     return 0;
 }

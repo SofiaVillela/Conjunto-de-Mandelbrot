@@ -22,15 +22,37 @@ int mandelbrot_ponto(double c_real, double c_imag, int max_iter){
     return i;
 }
 
-void mandelbrot_serial(int altura, int largura, int max_interacao ,FILE *file){
+void mandelbrot_serial(int altura, int largura, int max_interacao , int *array_instensidades){
     for (int py = 0; py < altura; py++) {
         for (int px = 0; px < largura; px++) {
             double c_real = -2.0 + ((double)px / (largura - 1)) * (1.0 - (-2.0));
             double c_imag = -1.5 + ((double)py / (altura - 1)) * (1.5 - (-1.5));
             int resultado = mandelbrot_ponto(c_real, c_imag, max_interacao);
             int intensidade = (int)(((double)resultado / max_interacao ) * 255);
-            fprintf(file, "%d " ,intensidade);
+            array_instensidades[largura * py + px] = intensidade;
         }
-        fprintf(file, "\n");
+    }
+}
+
+void mandelbrot_openmp(int altura, int largura, int max_interacao ,int *array_instensidades){
+    #pragma omp parallel for
+    for (int py = 0; py < altura; py++) {
+        for (int px = 0; px < largura; px++) {
+            double c_real = -2.0 + ((double)px / (largura - 1)) * (1.0 - (-2.0));
+            double c_imag = -1.5 + ((double)py / (altura - 1)) * (1.5 - (-1.5));
+            int resultado = mandelbrot_ponto(c_real, c_imag, max_interacao);
+            int intensidade = (int)(((double)resultado / max_interacao ) * 255);
+            array_instensidades[largura * py + px] = intensidade;
+        }
+        
+    }
+}
+
+void escreve_pgm(int largura, int altura, int *array_intensidades, FILE *file){
+    for(int i = 0; i < largura * altura; i++){
+        fprintf(file, "%d ", array_intensidades[i]);
+        if((i + 1) % largura == 0){
+            fprintf(file, "\n");
+        }
     }
 }

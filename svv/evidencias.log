@@ -487,3 +487,575 @@ Script started on 2026-08-30 15:10:35-03:00 [TERM="xterm-256color" TTY="/dev/pts
 [?2004lexit
 
 Script done on 2026-08-30 15:18:48-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-30 16:01:46-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="139" LINES="12"]
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ script -a evidencias.logcd svv[K[2Pexit[9@cat times.tx[C./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm[16P./mandelbrot 5 5 100 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:49:39:[m[K [01;31m[Kerror: [m[K‘[01m[Klargura[m[K’ undeclared (first use in this function)
+   49 |     int *array_instensidades = malloc([01;31m[Klargura[m[K * altura * sizeof(int));
+      |                                       [01;31m[K^~~~~~~[m[K
+[01m[Kmain.c:49:39:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:49:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kaltura[m[K’ undeclared (first use in this function)
+   49 |     int *array_instensidades = malloc(largura * [01;31m[Kaltura[m[K * sizeof(int));
+      |                                                 [01;31m[K^~~~~~[m[K
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[14Pscript -a evidencias.loggcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[14Pscript -a evidencias.logcd svv[K[2Pexit[9@cat times.tx[C./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm[12P./mandelbrot 200 200 500 4
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ ./mandelbrot 200 200 500 4gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[01m[Kfuncoes.c:[m[K In function ‘[01m[Kescreve_pgm[m[K’:
+[01m[Kfuncoes.c:53:31:[m[K [01;31m[Kerror: [m[K‘[01m[Karray_instensidades[m[K’ undeclared (first use in this function); did you mean ‘[01m[Karray_intensidades[m[K’?
+   53 |         fprintf(file, "%lf ", [01;31m[Karray_instensidades[m[K[i]);
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                               [32m[Karray_intensidades[m[K
+[01m[Kfuncoes.c:53:31:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm
+[?2004lIn file included from [01m[K/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:22[m[K,
+                 from [01m[K/usr/include/time.h:64[m[K,
+                 from [01m[Kmain.c:5[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:[m[K In function ‘[01m[Kescreve_pgm[m[K’:
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:41:33:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__locale_t[m[K’
+   41 | typedef struct __locale_struct *[01;31m[K__locale_t[m[K;
+      |                                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:24:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[Klocale_t[m[K’
+   24 | typedef __locale_t [01;31m[Klocale_t[m[K;
+      |                    [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:81:16:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock[m[K’
+   81 | extern clock_t [01;31m[Kclock[m[K (void) __THROW;
+      |                [01;31m[K^~~~~[m[K
+[01m[K/usr/include/time.h:85:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktime[m[K’
+   85 | extern time_t [01;31m[Ktime[m[K (time_t *__timer) __THROW;
+      |               [01;31m[K^~~~[m[K
+[01m[K/usr/include/time.h:88:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kdifftime[m[K’
+   88 | extern double [01;31m[Kdifftime[m[K (time_t __time1, time_t __time0);
+      |               [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:91:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kmktime[m[K’
+   91 | extern time_t [01;31m[Kmktime[m[K (struct tm *__tp) __THROW;
+      |               [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:108:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kstrftime[m[K’
+  108 | extern size_t [01;31m[Kstrftime[m[K (char *__restrict __s, size_t __maxsize,
+      |               [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:128:27:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Klocale_t[m[K’
+  128 |                           [01;31m[Klocale_t[m[K __loc) __THROW;
+      |                           [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:141:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kgmtime[m[K’
+  141 | extern struct tm *[01;31m[Kgmtime[m[K (const time_t *__timer) __THROW;
+      |                   [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:145:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Klocaltime[m[K’
+  145 | extern struct tm *[01;31m[Klocaltime[m[K (const time_t *__timer) __THROW;
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:163:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kgmtime_r[m[K’
+  163 | extern struct tm *[01;31m[Kgmtime_r[m[K (const time_t *__restrict __timer,
+      |                   [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:168:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Klocaltime_r[m[K’
+  168 | extern struct tm *[01;31m[Klocaltime_r[m[K (const time_t *__restrict __timer,
+      |                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:188:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kasctime[m[K’
+  188 | extern char *[01;31m[Kasctime[m[K (const struct tm *__tp) __THROW;
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/time.h:192:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kctime[m[K’
+  192 | extern char *[01;31m[Kctime[m[K (const time_t *__timer) __THROW;
+      |              [01;31m[K^~~~~[m[K
+[01m[K/usr/include/time.h:206:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kasctime_r[m[K’
+  206 | extern char *[01;31m[Kasctime_r[m[K (const struct tm *__restrict __tp,
+      |              [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:211:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kctime_r[m[K’
+  211 | extern char *[01;31m[Kctime_r[m[K (const time_t *__restrict __timer,
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/time.h:226:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__tzname[m[K’
+  226 | extern char *[01;31m[K__tzname[m[K[2];       /* Current time zone abbreviations.  */
+      |              [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:227:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__daylight[m[K’
+  227 | extern int [01;31m[K__daylight[m[K;          /* If daylight-saving time is ever in use.  */
+      |            [01;31m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:228:17:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__timezone[m[K’
+  228 | extern long int [01;31m[K__timezone[m[K;     /* Seconds west of UTC.  */
+      |                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:233:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktzname[m[K’
+  233 | extern char *[01;31m[Ktzname[m[K[2];
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:237:13:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktzset[m[K’
+  237 | extern void [01;31m[Ktzset[m[K (void) __THROW;
+      |             [01;31m[K^~~~~[m[K
+[01m[K/usr/include/time.h:241:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kdaylight[m[K’
+  241 | extern int [01;31m[Kdaylight[m[K;
+      |            [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:242:17:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimezone[m[K’
+  242 | extern long int [01;31m[Ktimezone[m[K;
+      |                 [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:255:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimegm[m[K’
+  255 | extern time_t [01;31m[Ktimegm[m[K (struct tm *__tp) __THROW;
+      |               [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:272:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimelocal[m[K’
+  272 | extern time_t [01;31m[Ktimelocal[m[K (struct tm *__tp) __THROW;
+      |               [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:280:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kdysize[m[K’
+  280 | extern int [01;31m[Kdysize[m[K (int __year) __THROW  __attribute__ ((__const__));
+      |            [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:290:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Knanosleep[m[K’
+  290 | extern int [01;31m[Knanosleep[m[K (const struct timespec *__requested_time,
+      |            [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:294:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_getres[m[K’
+  294 | extern int [01;31m[Kclock_getres[m[K (clockid_t __clock_id, struct timespec *__res) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:297:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_gettime[m[K’
+  297 | extern int [01;31m[Kclock_gettime[m[K (clockid_t __clock_id, struct timespec *__tp)
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:301:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_settime[m[K’
+  301 | extern int [01;31m[Kclock_settime[m[K (clockid_t __clock_id, const struct timespec *__tp)
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:332:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_nanosleep[m[K’
+  332 | extern int [01;31m[Kclock_nanosleep[m[K (clockid_t __clock_id, int __flags,
+      |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:347:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_getcpuclockid[m[K’
+  347 | extern int [01;31m[Kclock_getcpuclockid[m[K (pid_t __pid, clockid_t *__clock_id) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:352:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_create[m[K’
+  352 | extern int [01;31m[Ktimer_create[m[K (clockid_t __clock_id,
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:357:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_delete[m[K’
+  357 | extern int [01;31m[Ktimer_delete[m[K (timer_t __timerid) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:361:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_settime[m[K’
+  361 | extern int [01;31m[Ktimer_settime[m[K (timer_t __timerid, int __flags,
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:366:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_gettime[m[K’
+  366 | extern int [01;31m[Ktimer_gettime[m[K (timer_t __timerid, struct itimerspec *__value)
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:385:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_getoverrun[m[K’
+  385 | extern int [01;31m[Ktimer_getoverrun[m[K (timer_t __timerid) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:392:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimespec_get[m[K’
+  392 | extern int [01;31m[Ktimespec_get[m[K (struct timespec *__ts, int __base)
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:408:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimespec_getres[m[K’
+  408 | extern int [01;31m[Ktimespec_getres[m[K (struct timespec *__ts, int __base)
+      |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:7:1:[m[K [01;35m[Kwarning: [m[Kempty declaration
+    7 | [01;35m[Kenum[m[K { LARGURA, ALTURA, MAX_ITERACOES ,NUM_THREADS};
+      | [01;35m[K^~~~[m[K
+[01m[Kmain.c:11:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[K{[m[K’ token
+   11 | int main(int argc, char **argv)[01;31m[K{[m[K
+      |                                [01;31m[K^[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[Kfuncoes.h:6:6:[m[K [01;31m[Kerror: [m[Kold-style parameter declarations in prototyped function definition
+    6 | void [01;31m[Kescreve_pgm[m[K(int largura, int altura, int *array_intensidades, FILE *file)
+      |      [01;31m[K^~~~~~~~~~~[m[K
+[01m[Kmain.c:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ at end of input
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:22[m[K,
+                 from [01m[K/usr/include/time.h:64[m[K,
+                 from [01m[Kfuncoes.c:5[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:[m[K In function ‘[01m[Kescreve_pgm[m[K’:
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:41:33:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__locale_t[m[K’
+   41 | typedef struct __locale_struct *[01;31m[K__locale_t[m[K;
+      |                                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:24:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[Klocale_t[m[K’
+   24 | typedef __locale_t [01;31m[Klocale_t[m[K;
+      |                    [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:81:16:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock[m[K’
+   81 | extern clock_t [01;31m[Kclock[m[K (void) __THROW;
+      |                [01;31m[K^~~~~[m[K
+[01m[K/usr/include/time.h:85:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktime[m[K’
+   85 | extern time_t [01;31m[Ktime[m[K (time_t *__timer) __THROW;
+      |               [01;31m[K^~~~[m[K
+[01m[K/usr/include/time.h:88:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kdifftime[m[K’
+   88 | extern double [01;31m[Kdifftime[m[K (time_t __time1, time_t __time0);
+      |               [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:91:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kmktime[m[K’
+   91 | extern time_t [01;31m[Kmktime[m[K (struct tm *__tp) __THROW;
+      |               [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:108:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kstrftime[m[K’
+  108 | extern size_t [01;31m[Kstrftime[m[K (char *__restrict __s, size_t __maxsize,
+      |               [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:128:27:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Klocale_t[m[K’
+  128 |                           [01;31m[Klocale_t[m[K __loc) __THROW;
+      |                           [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:141:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kgmtime[m[K’
+  141 | extern struct tm *[01;31m[Kgmtime[m[K (const time_t *__timer) __THROW;
+      |                   [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:145:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Klocaltime[m[K’
+  145 | extern struct tm *[01;31m[Klocaltime[m[K (const time_t *__timer) __THROW;
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:163:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kgmtime_r[m[K’
+  163 | extern struct tm *[01;31m[Kgmtime_r[m[K (const time_t *__restrict __timer,
+      |                   [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:168:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Klocaltime_r[m[K’
+  168 | extern struct tm *[01;31m[Klocaltime_r[m[K (const time_t *__restrict __timer,
+      |                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:188:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kasctime[m[K’
+  188 | extern char *[01;31m[Kasctime[m[K (const struct tm *__tp) __THROW;
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/time.h:192:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kctime[m[K’
+  192 | extern char *[01;31m[Kctime[m[K (const time_t *__timer) __THROW;
+      |              [01;31m[K^~~~~[m[K
+[01m[K/usr/include/time.h:206:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kasctime_r[m[K’
+  206 | extern char *[01;31m[Kasctime_r[m[K (const struct tm *__restrict __tp,
+      |              [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:211:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kctime_r[m[K’
+  211 | extern char *[01;31m[Kctime_r[m[K (const time_t *__restrict __timer,
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/time.h:226:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__tzname[m[K’
+  226 | extern char *[01;31m[K__tzname[m[K[2];       /* Current time zone abbreviations.  */
+      |              [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:227:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__daylight[m[K’
+  227 | extern int [01;31m[K__daylight[m[K;          /* If daylight-saving time is ever in use.  */
+      |            [01;31m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:228:17:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__timezone[m[K’
+  228 | extern long int [01;31m[K__timezone[m[K;     /* Seconds west of UTC.  */
+      |                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:233:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktzname[m[K’
+  233 | extern char *[01;31m[Ktzname[m[K[2];
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:237:13:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktzset[m[K’
+  237 | extern void [01;31m[Ktzset[m[K (void) __THROW;
+      |             [01;31m[K^~~~~[m[K
+[01m[K/usr/include/time.h:241:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kdaylight[m[K’
+  241 | extern int [01;31m[Kdaylight[m[K;
+      |            [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:242:17:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimezone[m[K’
+  242 | extern long int [01;31m[Ktimezone[m[K;
+      |                 [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:255:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimegm[m[K’
+  255 | extern time_t [01;31m[Ktimegm[m[K (struct tm *__tp) __THROW;
+      |               [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:272:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimelocal[m[K’
+  272 | extern time_t [01;31m[Ktimelocal[m[K (struct tm *__tp) __THROW;
+      |               [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:280:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kdysize[m[K’
+  280 | extern int [01;31m[Kdysize[m[K (int __year) __THROW  __attribute__ ((__const__));
+      |            [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:290:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Knanosleep[m[K’
+  290 | extern int [01;31m[Knanosleep[m[K (const struct timespec *__requested_time,
+      |            [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:294:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_getres[m[K’
+  294 | extern int [01;31m[Kclock_getres[m[K (clockid_t __clock_id, struct timespec *__res) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:297:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_gettime[m[K’
+  297 | extern int [01;31m[Kclock_gettime[m[K (clockid_t __clock_id, struct timespec *__tp)
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:301:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_settime[m[K’
+  301 | extern int [01;31m[Kclock_settime[m[K (clockid_t __clock_id, const struct timespec *__tp)
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:332:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_nanosleep[m[K’
+  332 | extern int [01;31m[Kclock_nanosleep[m[K (clockid_t __clock_id, int __flags,
+      |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:347:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_getcpuclockid[m[K’
+  347 | extern int [01;31m[Kclock_getcpuclockid[m[K (pid_t __pid, clockid_t *__clock_id) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:352:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_create[m[K’
+  352 | extern int [01;31m[Ktimer_create[m[K (clockid_t __clock_id,
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:357:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_delete[m[K’
+  357 | extern int [01;31m[Ktimer_delete[m[K (timer_t __timerid) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:361:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_settime[m[K’
+  361 | extern int [01;31m[Ktimer_settime[m[K (timer_t __timerid, int __flags,
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:366:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_gettime[m[K’
+  366 | extern int [01;31m[Ktimer_gettime[m[K (timer_t __timerid, struct itimerspec *__value)
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:385:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_getoverrun[m[K’
+  385 | extern int [01;31m[Ktimer_getoverrun[m[K (timer_t __timerid) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:392:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimespec_get[m[K’
+  392 | extern int [01;31m[Ktimespec_get[m[K (struct timespec *__ts, int __base)
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:408:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimespec_getres[m[K’
+  408 | extern int [01;31m[Ktimespec_getres[m[K (struct timespec *__ts, int __base)
+      |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kfuncoes.c:8:65:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[K{[m[K’ token
+    8 | int mandelbrot_ponto(double c_real, double c_imag, int max_iter)[01;31m[K{[m[K
+      |                                                                 [01;31m[K^[m[K
+[01m[Kfuncoes.c:25:94:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[K{[m[K’ token
+   25 | void mandelbrot_serial(int altura, int largura, int max_interacao , int *array_instensidades)[01;31m[K{[m[K
+      |                                                                                              [01;31m[K^[m[K
+[01m[Kfuncoes.c:37:93:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[K{[m[K’ token
+   37 | void mandelbrot_openmp(int altura, int largura, int max_interacao ,int *array_instensidades)[01;31m[K{[m[K
+      |                                                                                             [01;31m[K^[m[K
+[01m[Kfuncoes.c:51:79:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[K{[m[K’ token
+   51 | void escreve_pgm(int largura, int altura, int *array_intensidades, FILE *file)[01;31m[K{[m[K
+      |                                                                               [01;31m[K^[m[K
+In file included from [01m[Kfuncoes.c:4[m[K:
+[01m[Kfuncoes.h:6:6:[m[K [01;31m[Kerror: [m[Kold-style parameter declarations in prototyped function definition
+    6 | void [01;31m[Kescreve_pgm[m[K(int largura, int altura, int *array_intensidades, FILE *file)
+      |      [01;31m[K^~~~~~~~~~~[m[K
+[01m[Kfuncoes.c:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ at end of input
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm
+[?2004lIn file included from [01m[K/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:22[m[K,
+                 from [01m[K/usr/include/time.h:64[m[K,
+                 from [01m[Kmain.c:5[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:[m[K In function ‘[01m[Kescreve_pgm[m[K’:
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:41:33:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__locale_t[m[K’
+   41 | typedef struct __locale_struct *[01;31m[K__locale_t[m[K;
+      |                                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:24:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[Klocale_t[m[K’
+   24 | typedef __locale_t [01;31m[Klocale_t[m[K;
+      |                    [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:81:16:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock[m[K’
+   81 | extern clock_t [01;31m[Kclock[m[K (void) __THROW;
+      |                [01;31m[K^~~~~[m[K
+[01m[K/usr/include/time.h:85:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktime[m[K’
+   85 | extern time_t [01;31m[Ktime[m[K (time_t *__timer) __THROW;
+      |               [01;31m[K^~~~[m[K
+[01m[K/usr/include/time.h:88:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kdifftime[m[K’
+   88 | extern double [01;31m[Kdifftime[m[K (time_t __time1, time_t __time0);
+      |               [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:91:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kmktime[m[K’
+   91 | extern time_t [01;31m[Kmktime[m[K (struct tm *__tp) __THROW;
+      |               [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:108:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kstrftime[m[K’
+  108 | extern size_t [01;31m[Kstrftime[m[K (char *__restrict __s, size_t __maxsize,
+      |               [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:128:27:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Klocale_t[m[K’
+  128 |                           [01;31m[Klocale_t[m[K __loc) __THROW;
+      |                           [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:141:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kgmtime[m[K’
+  141 | extern struct tm *[01;31m[Kgmtime[m[K (const time_t *__timer) __THROW;
+      |                   [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:145:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Klocaltime[m[K’
+  145 | extern struct tm *[01;31m[Klocaltime[m[K (const time_t *__timer) __THROW;
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:163:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kgmtime_r[m[K’
+  163 | extern struct tm *[01;31m[Kgmtime_r[m[K (const time_t *__restrict __timer,
+      |                   [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:168:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Klocaltime_r[m[K’
+  168 | extern struct tm *[01;31m[Klocaltime_r[m[K (const time_t *__restrict __timer,
+      |                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:188:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kasctime[m[K’
+  188 | extern char *[01;31m[Kasctime[m[K (const struct tm *__tp) __THROW;
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/time.h:192:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kctime[m[K’
+  192 | extern char *[01;31m[Kctime[m[K (const time_t *__timer) __THROW;
+      |              [01;31m[K^~~~~[m[K
+[01m[K/usr/include/time.h:206:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kasctime_r[m[K’
+  206 | extern char *[01;31m[Kasctime_r[m[K (const struct tm *__restrict __tp,
+      |              [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:211:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kctime_r[m[K’
+  211 | extern char *[01;31m[Kctime_r[m[K (const time_t *__restrict __timer,
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/time.h:226:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__tzname[m[K’
+  226 | extern char *[01;31m[K__tzname[m[K[2];       /* Current time zone abbreviations.  */
+      |              [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:227:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__daylight[m[K’
+  227 | extern int [01;31m[K__daylight[m[K;          /* If daylight-saving time is ever in use.  */
+      |            [01;31m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:228:17:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__timezone[m[K’
+  228 | extern long int [01;31m[K__timezone[m[K;     /* Seconds west of UTC.  */
+      |                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:233:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktzname[m[K’
+  233 | extern char *[01;31m[Ktzname[m[K[2];
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:237:13:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktzset[m[K’
+  237 | extern void [01;31m[Ktzset[m[K (void) __THROW;
+      |             [01;31m[K^~~~~[m[K
+[01m[K/usr/include/time.h:241:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kdaylight[m[K’
+  241 | extern int [01;31m[Kdaylight[m[K;
+      |            [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:242:17:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimezone[m[K’
+  242 | extern long int [01;31m[Ktimezone[m[K;
+      |                 [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:255:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimegm[m[K’
+  255 | extern time_t [01;31m[Ktimegm[m[K (struct tm *__tp) __THROW;
+      |               [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:272:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimelocal[m[K’
+  272 | extern time_t [01;31m[Ktimelocal[m[K (struct tm *__tp) __THROW;
+      |               [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:280:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kdysize[m[K’
+  280 | extern int [01;31m[Kdysize[m[K (int __year) __THROW  __attribute__ ((__const__));
+      |            [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:290:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Knanosleep[m[K’
+  290 | extern int [01;31m[Knanosleep[m[K (const struct timespec *__requested_time,
+      |            [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:294:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_getres[m[K’
+  294 | extern int [01;31m[Kclock_getres[m[K (clockid_t __clock_id, struct timespec *__res) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:297:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_gettime[m[K’
+  297 | extern int [01;31m[Kclock_gettime[m[K (clockid_t __clock_id, struct timespec *__tp)
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:301:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_settime[m[K’
+  301 | extern int [01;31m[Kclock_settime[m[K (clockid_t __clock_id, const struct timespec *__tp)
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:332:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_nanosleep[m[K’
+  332 | extern int [01;31m[Kclock_nanosleep[m[K (clockid_t __clock_id, int __flags,
+      |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:347:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_getcpuclockid[m[K’
+  347 | extern int [01;31m[Kclock_getcpuclockid[m[K (pid_t __pid, clockid_t *__clock_id) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:352:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_create[m[K’
+  352 | extern int [01;31m[Ktimer_create[m[K (clockid_t __clock_id,
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:357:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_delete[m[K’
+  357 | extern int [01;31m[Ktimer_delete[m[K (timer_t __timerid) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:361:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_settime[m[K’
+  361 | extern int [01;31m[Ktimer_settime[m[K (timer_t __timerid, int __flags,
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:366:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_gettime[m[K’
+  366 | extern int [01;31m[Ktimer_gettime[m[K (timer_t __timerid, struct itimerspec *__value)
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:385:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_getoverrun[m[K’
+  385 | extern int [01;31m[Ktimer_getoverrun[m[K (timer_t __timerid) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:392:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimespec_get[m[K’
+  392 | extern int [01;31m[Ktimespec_get[m[K (struct timespec *__ts, int __base)
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:408:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimespec_getres[m[K’
+  408 | extern int [01;31m[Ktimespec_getres[m[K (struct timespec *__ts, int __base)
+      |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:7:1:[m[K [01;35m[Kwarning: [m[Kempty declaration
+    7 | [01;35m[Kenum[m[K { LARGURA, ALTURA, MAX_ITERACOES ,NUM_THREADS};
+      | [01;35m[K^~~~[m[K
+[01m[Kmain.c:11:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[K{[m[K’ token
+   11 | int main(int argc, char **argv)[01;31m[K{[m[K
+      |                                [01;31m[K^[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[Kfuncoes.h:6:6:[m[K [01;31m[Kerror: [m[Kold-style parameter declarations in prototyped function definition
+    6 | void [01;31m[Kescreve_pgm[m[K(int largura, int altura, int *array_intensidades, FILE *file)
+      |      [01;31m[K^~~~~~~~~~~[m[K
+[01m[Kmain.c:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ at end of input
+In file included from [01m[K/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:22[m[K,
+                 from [01m[K/usr/include/time.h:64[m[K,
+                 from [01m[Kfuncoes.c:5[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:[m[K In function ‘[01m[Kescreve_pgm[m[K’:
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:41:33:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__locale_t[m[K’
+   41 | typedef struct __locale_struct *[01;31m[K__locale_t[m[K;
+      |                                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:24:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[Klocale_t[m[K’
+   24 | typedef __locale_t [01;31m[Klocale_t[m[K;
+      |                    [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:81:16:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock[m[K’
+   81 | extern clock_t [01;31m[Kclock[m[K (void) __THROW;
+      |                [01;31m[K^~~~~[m[K
+[01m[K/usr/include/time.h:85:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktime[m[K’
+   85 | extern time_t [01;31m[Ktime[m[K (time_t *__timer) __THROW;
+      |               [01;31m[K^~~~[m[K
+[01m[K/usr/include/time.h:88:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kdifftime[m[K’
+   88 | extern double [01;31m[Kdifftime[m[K (time_t __time1, time_t __time0);
+      |               [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:91:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kmktime[m[K’
+   91 | extern time_t [01;31m[Kmktime[m[K (struct tm *__tp) __THROW;
+      |               [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:108:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kstrftime[m[K’
+  108 | extern size_t [01;31m[Kstrftime[m[K (char *__restrict __s, size_t __maxsize,
+      |               [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:128:27:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Klocale_t[m[K’
+  128 |                           [01;31m[Klocale_t[m[K __loc) __THROW;
+      |                           [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:141:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kgmtime[m[K’
+  141 | extern struct tm *[01;31m[Kgmtime[m[K (const time_t *__timer) __THROW;
+      |                   [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:145:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Klocaltime[m[K’
+  145 | extern struct tm *[01;31m[Klocaltime[m[K (const time_t *__timer) __THROW;
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:163:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kgmtime_r[m[K’
+  163 | extern struct tm *[01;31m[Kgmtime_r[m[K (const time_t *__restrict __timer,
+      |                   [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:168:19:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Klocaltime_r[m[K’
+  168 | extern struct tm *[01;31m[Klocaltime_r[m[K (const time_t *__restrict __timer,
+      |                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:188:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kasctime[m[K’
+  188 | extern char *[01;31m[Kasctime[m[K (const struct tm *__tp) __THROW;
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/time.h:192:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kctime[m[K’
+  192 | extern char *[01;31m[Kctime[m[K (const time_t *__timer) __THROW;
+      |              [01;31m[K^~~~~[m[K
+[01m[K/usr/include/time.h:206:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kasctime_r[m[K’
+  206 | extern char *[01;31m[Kasctime_r[m[K (const struct tm *__restrict __tp,
+      |              [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:211:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kctime_r[m[K’
+  211 | extern char *[01;31m[Kctime_r[m[K (const time_t *__restrict __timer,
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/time.h:226:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__tzname[m[K’
+  226 | extern char *[01;31m[K__tzname[m[K[2];       /* Current time zone abbreviations.  */
+      |              [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:227:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__daylight[m[K’
+  227 | extern int [01;31m[K__daylight[m[K;          /* If daylight-saving time is ever in use.  */
+      |            [01;31m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:228:17:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[K__timezone[m[K’
+  228 | extern long int [01;31m[K__timezone[m[K;     /* Seconds west of UTC.  */
+      |                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:233:14:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktzname[m[K’
+  233 | extern char *[01;31m[Ktzname[m[K[2];
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:237:13:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktzset[m[K’
+  237 | extern void [01;31m[Ktzset[m[K (void) __THROW;
+      |             [01;31m[K^~~~~[m[K
+[01m[K/usr/include/time.h:241:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kdaylight[m[K’
+  241 | extern int [01;31m[Kdaylight[m[K;
+      |            [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:242:17:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimezone[m[K’
+  242 | extern long int [01;31m[Ktimezone[m[K;
+      |                 [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/time.h:255:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimegm[m[K’
+  255 | extern time_t [01;31m[Ktimegm[m[K (struct tm *__tp) __THROW;
+      |               [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:272:15:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimelocal[m[K’
+  272 | extern time_t [01;31m[Ktimelocal[m[K (struct tm *__tp) __THROW;
+      |               [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:280:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kdysize[m[K’
+  280 | extern int [01;31m[Kdysize[m[K (int __year) __THROW  __attribute__ ((__const__));
+      |            [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/time.h:290:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Knanosleep[m[K’
+  290 | extern int [01;31m[Knanosleep[m[K (const struct timespec *__requested_time,
+      |            [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/time.h:294:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_getres[m[K’
+  294 | extern int [01;31m[Kclock_getres[m[K (clockid_t __clock_id, struct timespec *__res) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:297:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_gettime[m[K’
+  297 | extern int [01;31m[Kclock_gettime[m[K (clockid_t __clock_id, struct timespec *__tp)
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:301:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_settime[m[K’
+  301 | extern int [01;31m[Kclock_settime[m[K (clockid_t __clock_id, const struct timespec *__tp)
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:332:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_nanosleep[m[K’
+  332 | extern int [01;31m[Kclock_nanosleep[m[K (clockid_t __clock_id, int __flags,
+      |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:347:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Kclock_getcpuclockid[m[K’
+  347 | extern int [01;31m[Kclock_getcpuclockid[m[K (pid_t __pid, clockid_t *__clock_id) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:352:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_create[m[K’
+  352 | extern int [01;31m[Ktimer_create[m[K (clockid_t __clock_id,
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:357:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_delete[m[K’
+  357 | extern int [01;31m[Ktimer_delete[m[K (timer_t __timerid) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:361:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_settime[m[K’
+  361 | extern int [01;31m[Ktimer_settime[m[K (timer_t __timerid, int __flags,
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:366:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_gettime[m[K’
+  366 | extern int [01;31m[Ktimer_gettime[m[K (timer_t __timerid, struct itimerspec *__value)
+      |            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:385:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimer_getoverrun[m[K’
+  385 | extern int [01;31m[Ktimer_getoverrun[m[K (timer_t __timerid) __THROW;
+      |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:392:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimespec_get[m[K’
+  392 | extern int [01;31m[Ktimespec_get[m[K (struct timespec *__ts, int __base)
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/time.h:408:12:[m[K [01;31m[Kerror: [m[Kstorage class specified for parameter ‘[01m[Ktimespec_getres[m[K’
+  408 | extern int [01;31m[Ktimespec_getres[m[K (struct timespec *__ts, int __base)
+      |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kfuncoes.c:8:65:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[K{[m[K’ token
+    8 | int mandelbrot_ponto(double c_real, double c_imag, int max_iter)[01;31m[K{[m[K
+      |                                                                 [01;31m[K^[m[K
+[01m[Kfuncoes.c:25:94:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[K{[m[K’ token
+   25 | void mandelbrot_serial(int altura, int largura, int max_interacao , int *array_instensidades)[01;31m[K{[m[K
+      |                                                                                              [01;31m[K^[m[K
+[01m[Kfuncoes.c:37:93:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[K{[m[K’ token
+   37 | void mandelbrot_openmp(int altura, int largura, int max_interacao ,int *array_instensidades)[01;31m[K{[m[K
+      |                                                                                             [01;31m[K^[m[K
+[01m[Kfuncoes.c:51:79:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[K{[m[K’ token
+   51 | void escreve_pgm(int largura, int altura, int *array_intensidades, FILE *file)[01;31m[K{[m[K
+      |                                                                               [01;31m[K^[m[K
+In file included from [01m[Kfuncoes.c:4[m[K:
+[01m[Kfuncoes.h:6:6:[m[K [01;31m[Kerror: [m[Kold-style parameter declarations in prototyped function definition
+    6 | void [01;31m[Kescreve_pgm[m[K(int largura, int altura, int *array_intensidades, FILE *file)
+      |      [01;31m[K^~~~~~~~~~~[m[K
+[01m[Kfuncoes.c:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ at end of input
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[K]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ gcc main.c funcoes.c -o mandelbrot -lm[12P./mandelbrot 200 200 500 4[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m./mandelbrot 5 5 100 4[27m./mandelbrot 5 5 100 4
+[?2004l[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [7mcat mandelbrot_svv_serial.pgm[27mcat mandelbrot_svv_serial.pgm
+[?2004l0 2 2 2 2 
+0 5 12 10 2 
+255 255 255 255 5 
+0 5 12 10 2 
+0 2 2 2 2 
+[?2004h]0;sofiavillela@SofiaVillel-PC: ~/Conjunto-de-Mandelbrot/svv[01;32msofiavillela@SofiaVillel-PC[00m:[01;34m~/Conjunto-de-Mandelbrot/svv[00m$ [7mgit add main.c funcoes.c funcoes.h[27m[1Pgit add main.c funcoes.c funcoes.[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
