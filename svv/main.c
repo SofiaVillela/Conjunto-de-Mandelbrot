@@ -2,9 +2,11 @@
 #include <stdlib.h>
 #include <math.h>
 #include "funcoes.h"
-
+#include <time.h>
 
 enum { LARGURA, ALTURA, MAX_ITERACOES ,NUM_THREADS};
+struct timespec inicio, fim;
+
 
 int main(int argc, char **argv){
     if(argc != 5){
@@ -29,6 +31,7 @@ int main(int argc, char **argv){
         fprintf(stderr, "erro: não foi possivel abrir o arquivo.\n");
         exit(1);
     }
+    clock_gettime(CLOCK_MONOTONIC, &inicio);
     for (int py = 0; py < array_numeros[ALTURA]; py++) {
         for (int px = 0; px < array_numeros[LARGURA]; px++) {
             double c_real = -2.0 + ((double)px / (array_numeros[LARGURA] - 1)) * (1.0 - (-2.0));
@@ -39,7 +42,17 @@ int main(int argc, char **argv){
         }
         fprintf(file, "\n");
     }
-
+    clock_gettime(CLOCK_MONOTONIC, &fim);
     fclose(file);
+
+    double tempo_gasto = (fim.tv_sec - inicio.tv_sec) + (fim.tv_nsec - inicio.tv_nsec) / 1e9;
+    
+    FILE *file_time = fopen("times.txt", "a");
+    if(file_time == NULL){
+        fprintf(stderr, "erro: nao foi possivel abrir o arquivo");
+        exit(1);
+    }
+    fprintf(file_time, "%lf ", tempo_gasto);
+    fclose(file_time);
     return 0;
 }
