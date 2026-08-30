@@ -32,16 +32,7 @@ int main(int argc, char **argv){
         exit(1);
     }
     clock_gettime(CLOCK_MONOTONIC, &inicio);
-    for (int py = 0; py < array_numeros[ALTURA]; py++) {
-        for (int px = 0; px < array_numeros[LARGURA]; px++) {
-            double c_real = -2.0 + ((double)px / (array_numeros[LARGURA] - 1)) * (1.0 - (-2.0));
-            double c_imag = -1.5 + ((double)py / (array_numeros[ALTURA] - 1)) * (1.5 - (-1.5));
-            int resultado = mandelbrot_ponto(c_real, c_imag, array_numeros[MAX_ITERACOES]);
-            int intensidade = (int)(((double)resultado / array_numeros[MAX_ITERACOES] ) * 255);
-            fprintf(file, "%d " ,intensidade);
-        }
-        fprintf(file, "\n");
-    }
+    mandelbrot_serial(array_numeros[ALTURA], array_numeros[LARGURA], array_numeros[MAX_ITERACOES], file);
     clock_gettime(CLOCK_MONOTONIC, &fim);
     fclose(file);
 
@@ -53,6 +44,6 @@ int main(int argc, char **argv){
         exit(1);
     }
     fprintf(file_time, "%lf ", tempo_gasto);
-    fclose(file_time);
+    fclose(file_time);  
     return 0;
 }

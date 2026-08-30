@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include "funcoes.h"
-
+#include <time.h>
 
 
 int mandelbrot_ponto(double c_real, double c_imag, int max_iter){
@@ -20,4 +20,17 @@ int mandelbrot_ponto(double c_real, double c_imag, int max_iter){
         } 
     }
     return i;
+}
+
+void mandelbrot_serial(int altura, int largura, int max_interacao ,FILE *file){
+    for (int py = 0; py < altura; py++) {
+        for (int px = 0; px < largura; px++) {
+            double c_real = -2.0 + ((double)px / (largura - 1)) * (1.0 - (-2.0));
+            double c_imag = -1.5 + ((double)py / (altura - 1)) * (1.5 - (-1.5));
+            int resultado = mandelbrot_ponto(c_real, c_imag, max_interacao);
+            int intensidade = (int)(((double)resultado / max_interacao ) * 255);
+            fprintf(file, "%d " ,intensidade);
+        }
+        fprintf(file, "\n");
+    }
 }
