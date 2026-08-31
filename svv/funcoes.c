@@ -34,8 +34,8 @@ void mandelbrot_serial(int altura, int largura, int max_interacao , int *array_i
     }
 }
 
-void mandelbrot_openmp(int altura, int largura, int max_interacao ,int *array_instensidades){
-    #pragma omp parallel for
+void mandelbrot_openmp(int altura, int largura, int max_interacao , int num_threads,int *array_instensidades){
+    #pragma omp parallel for num_threads(num_threads)
     for (int py = 0; py < altura; py++) {
         for (int px = 0; px < largura; px++) {
             double c_real = -2.0 + ((double)px / (largura - 1)) * (1.0 - (-2.0));

@@ -61,7 +61,7 @@ int main(int argc, char **argv){
         exit(1);
     }
     clock_gettime(CLOCK_MONOTONIC, &inicio);
-    mandelbrot_openmp(array_numeros[ALTURA], array_numeros[LARGURA], array_numeros[MAX_ITERACOES], array_instensidades);
+    mandelbrot_openmp(array_numeros[ALTURA], array_numeros[LARGURA],array_numeros[MAX_ITERACOES], array_numeros[NUM_THREADS], array_instensidades);
     clock_gettime(CLOCK_MONOTONIC, &fim);
     escreve_pgm(array_numeros[LARGURA], array_numeros[ALTURA], array_instensidades, file_openmp);
     fclose(file_openmp);
