@@ -3,6 +3,7 @@
 #include <math.h>
 #include "funcoes.h"
 #include <time.h>
+#include <pthread.h>
 
 enum { LARGURA, ALTURA, MAX_ITERACOES ,NUM_THREADS};
 struct timespec inicio, fim;
@@ -68,7 +69,46 @@ int main(int argc, char **argv){
     double tempo_openmp = (fim.tv_sec - inicio.tv_sec) + (fim.tv_nsec - inicio.tv_nsec) / 1e9;
     fprintf(file_time, "%lf ", tempo_openmp);
     
-    fclose(file_time);  
+     
+    
+    pthread_t threads[array_numeros[NUM_THREADS]];
+    DadosThread dados_threads[array_numeros[NUM_THREADS]];
+    
+    clock_gettime(CLOCK_MONOTONIC, &inicio);
+    for (int t = 0; t < array_numeros[NUM_THREADS]; t++) {
+        dados_threads[t].py_inicio = t * (array_numeros[ALTURA] / array_numeros[NUM_THREADS]);
+        
+        if (t == array_numeros[NUM_THREADS] - 1) {
+            dados_threads[t].py_fim = array_numeros[ALTURA];  
+        } else {
+            dados_threads[t].py_fim = (t + 1) * (array_numeros[ALTURA] / array_numeros[NUM_THREADS]);
+        }
+        
+        dados_threads[t].largura = array_numeros[LARGURA];
+        dados_threads[t].altura = array_numeros[ALTURA];
+        dados_threads[t].max_iteracao = array_numeros[MAX_ITERACOES];
+        dados_threads[t].array_intensidades = array_instensidades;
+        
+        pthread_create(&threads[t], NULL, mandelbrot_pthead, &dados_threads[t]);
+    }
 
+    for(int i = 0; i < array_numeros[NUM_THREADS]; i++){  
+        pthread_join(threads[i], NULL);
+    }
+    clock_gettime(CLOCK_MONOTONIC, &fim);
+
+    FILE *file_pthreads1 = fopen("mandelbrot_svv_pthreads1.pgm", "w");
+    if(file_pthreads1 == NULL){
+        fprintf(stderr, "erro: não foi possivel abrir o arquivo.\n");
+        exit(1);
+    }
+    
+    escreve_pgm(array_numeros[LARGURA], array_numeros[ALTURA], array_instensidades, file_pthreads1);
+    fclose(file_pthreads1);
+    double tempo_pthreads1 = (fim.tv_sec - inicio.tv_sec) + (fim.tv_nsec - inicio.tv_nsec) / 1e9;
+    fprintf(file_time, "%lf ", tempo_pthreads1);
+    
+    fclose(file_time);  
+    
     return 0;
 }
