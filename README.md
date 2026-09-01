@@ -37,19 +37,15 @@ diff mandelbrot_svv_serial.pgm mandelbrot_svv_pthreads2.pgm
 (sem saída = arquivos idênticos)
 
 ## Estrutura do projeto
-svv/
-├── main.c
-valida argumentos, executa as 4 versões, mede tempo, escreve saídas
-├── funcoes.c
-cálculo do Mandelbrot e as 4 implementações + escrita do .pgm
-├── funcoes.h   
-declarações de funções e struct DadosThread (usada pelas Pthreads)
-├── Makefile    
-regras de compilação (all) e limpeza (clean)
-├── evidencias.log  
-log de testes gerado com `script -a evidencias.log`
-└── svv.pdf       
-relatório da implementação
+ 
+```
+├── main.c              # valida argumentos, executa as 4 versões, mede tempo, escreve saídas
+├── funcoes.c           # cálculo do Mandelbrot e as 4 implementações + escrita do .pgm
+├── funcoes.h           # declarações de funções e struct DadosThread (usada pelas Pthreads)
+├── Makefile            # regras de compilação (all) e limpeza (clean)
+├── evidencias.log      # log de testes gerado com `script -a evidencias.log`
+└── svv.pdf             # relatório da implementação
+```
 
 ## Validação de erros
 O programa rejeita e informa erro (via stderr) nos seguintes casos:
