@@ -71,8 +71,12 @@ int main(int argc, char **argv){
     
      
     
-    pthread_t threads[array_numeros[NUM_THREADS]];
-    DadosThread dados_threads[array_numeros[NUM_THREADS]];
+    pthread_t *threads = malloc(array_numeros[NUM_THREADS] * sizeof(pthread_t));
+    DadosThread *dados_threads = malloc(array_numeros[NUM_THREADS] * sizeof(DadosThread));
+    if(threads == NULL || dados_threads == NULL){
+        fprintf(stderr, "erro: nao foi possivel alocar memoria para as threads\n");
+        exit(1);
+    }
     
     clock_gettime(CLOCK_MONOTONIC, &inicio);
     for (int t = 0; t < array_numeros[NUM_THREADS]; t++) {
@@ -96,7 +100,8 @@ int main(int argc, char **argv){
         pthread_join(threads[i], NULL);
     }
     clock_gettime(CLOCK_MONOTONIC, &fim);
-
+    free(threads);
+    free(dados_threads);
     FILE *file_pthreads1 = fopen("mandelbrot_svv_pthreads1.pgm", "w");
     if(file_pthreads1 == NULL){
         fprintf(stderr, "erro: não foi possivel abrir o arquivo.\n");
@@ -125,8 +130,13 @@ int main(int argc, char **argv){
     mandelbrot_calcula_bruto(array_numeros[ALTURA], array_numeros[LARGURA], array_numeros[MAX_ITERACOES], array_resultado);
 
     int total_pixels = array_numeros[LARGURA] * array_numeros[ALTURA];
-    pthread_t threads2[array_numeros[NUM_THREADS]];
-    DadosNormalizacao dados_norm[array_numeros[NUM_THREADS]];
+
+    pthread_t *threads2 = malloc(array_numeros[NUM_THREADS] * sizeof(pthread_t));
+    DadosNormalizacao *dados_norm = malloc(array_numeros[NUM_THREADS] * sizeof(DadosNormalizacao));
+    if(threads2 == NULL || dados_norm == NULL){
+        fprintf(stderr, "erro: nao foi possivel alocar memoria para as threads\n");
+        exit(1);
+    }
 
     for (int t = 0; t < array_numeros[NUM_THREADS]; t++) {
         dados_norm[t].inicio = t * (total_pixels / array_numeros[NUM_THREADS]);
@@ -145,9 +155,11 @@ int main(int argc, char **argv){
     for(int i = 0; i < array_numeros[NUM_THREADS]; i++){
         pthread_join(threads2[i], NULL);
     }
-
+    
     clock_gettime(CLOCK_MONOTONIC, &fim);
 
+    free(threads2);
+    free(dados_norm);
     escreve_pgm(array_numeros[LARGURA], array_numeros[ALTURA], array_instensidades, file_pthreads2);
     fclose(file_pthreads2);
 
@@ -156,6 +168,7 @@ int main(int argc, char **argv){
     
 
     fclose(file_time);  
-    
+    free(array_instensidades);
+    free(array_resultado);
     return 0;
 }
