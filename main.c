@@ -35,7 +35,7 @@ int main(int argc, char **argv){
         fprintf(stderr, "erro: nao foi possivel alocar memoria para o array\n");
         exit(1);
     }
-    FILE *file_time = fopen("times.txt", "a");
+    FILE *file_time = fopen("times.txt", "w");
     if(file_time == NULL){
         fprintf(stderr, "erro: nao foi possivel abrir o arquivo\n");
         exit(1);
