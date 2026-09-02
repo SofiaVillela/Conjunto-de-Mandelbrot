@@ -6,6 +6,7 @@ void mandelbrot_serial(int altura, int largura, int max_interacao ,int *array_in
 void mandelbrot_openmp(int altura, int largura, int max_interacao, int num_threads,int *array_instensidades);
 void escreve_pgm(int largura, int altura,int *array_intensidades, FILE *file);
 void *mandelbrot_pthead(void *arg);
+void mandelbrot_calcula_bruto(int altura, int largura, int max_iter, int *array_resultado);
 void *mandelbrot_pthead2(void *arg);
 
 typedef struct {
@@ -18,5 +19,13 @@ typedef struct {
     int num_threads;
     int *array_intensidades;
 } DadosThread;
+
+typedef struct {
+    int inicio;
+    int fim;
+    int max_iter;
+    int *array_resultado;
+    int *array_intensidade;
+} DadosNormalizacao;
 
 #endif

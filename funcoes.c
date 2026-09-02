@@ -66,23 +66,6 @@ void *mandelbrot_pthead(void *arg){
     return NULL;
 }
 
-void *mandelbrot_pthead2(void *arg){
-    DadosThread *dados = (DadosThread *)arg;
-    if(dados == NULL){
-        fprintf(stderr, "erro: dados invalidos (NULL)\n");
-        exit(1);
-    }
-    for(int py = dados->id_thread; py < dados->altura; py += dados->num_threads){
-        for(int px = 0; px < dados->largura; px++){
-            double c_real = -2.0 + ((double)px / (dados->largura - 1)) * (1.0 - (-2.0));
-            double c_imag = -1.5 + ((double)py / (dados->altura - 1)) * (1.5 - (-1.5));
-            int resultado = mandelbrot_ponto(c_real, c_imag, dados->max_iteracao);
-            int intensidade = (int)(((double)resultado / dados->max_iteracao) * 255);
-            dados->array_intensidades[dados->largura * py + px] = intensidade;
-        }
-    }
-    return NULL;
-}
 
 void escreve_pgm(int largura, int altura, int *array_intensidades, FILE *file){
     for(int i = 0; i < largura * altura; i++){
@@ -91,4 +74,27 @@ void escreve_pgm(int largura, int altura, int *array_intensidades, FILE *file){
             fprintf(file, "\n");
         }
     }
+}
+
+void mandelbrot_calcula_bruto(int altura, int largura, int max_iter, int *array_resultado){
+    for (int py = 0; py < altura; py++) {
+        for (int px = 0; px < largura; px++) {
+            double c_real = -2.0 + ((double)px / (largura - 1)) * (1.0 - (-2.0));
+            double c_imag = -1.5 + ((double)py / (altura - 1)) * (1.5 - (-1.5));
+            int resultado = mandelbrot_ponto(c_real, c_imag, max_iter);
+            array_resultado[largura * py + px] = resultado;
+        }
+    }
+}
+
+void *mandelbrot_pthead2(void *arg){
+    DadosNormalizacao *dados = (DadosNormalizacao *)arg;
+    if(dados == NULL){
+        fprintf(stderr, "erro: dados invalidos (NULL)\n");
+        exit(1);
+    }
+    for(int i = dados->inicio; i < dados->fim; i++){
+        dados->array_intensidade[i] = (int)(((double)dados->array_resultado[i] / dados->max_iter) * 255);
+    }
+    return NULL;
 }

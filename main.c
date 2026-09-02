@@ -108,35 +108,49 @@ int main(int argc, char **argv){
     double tempo_pthreads1 = (fim.tv_sec - inicio.tv_sec) + (fim.tv_nsec - inicio.tv_nsec) / 1e9;
     fprintf(file_time, "%lf ", tempo_pthreads1);
     
-    pthread_t threads2[array_numeros[NUM_THREADS]];
-    DadosThread dados_threads2[array_numeros[NUM_THREADS]];
-    
-    clock_gettime(CLOCK_MONOTONIC, &inicio);
-    for (int t = 0; t < array_numeros[NUM_THREADS]; t++) {
-
-        dados_threads2[t].id_thread = t;
-        dados_threads2[t].num_threads = array_numeros[NUM_THREADS];  
-        dados_threads2[t].largura = array_numeros[LARGURA];
-        dados_threads2[t].altura = array_numeros[ALTURA];
-        dados_threads2[t].max_iteracao = array_numeros[MAX_ITERACOES];
-        dados_threads2[t].array_intensidades = array_instensidades;
-        
-        pthread_create(&threads2[t], NULL, mandelbrot_pthead2, &dados_threads2[t]);
+    int *array_resultado = malloc(array_numeros[LARGURA] * array_numeros[ALTURA] * sizeof(int));
+    if(array_resultado == NULL){
+        fprintf(stderr, "erro: nao foi possivel alocar memoria para o array\n");
+        exit(1);
     }
-
-    for(int i = 0; i < array_numeros[NUM_THREADS]; i++){  
-        pthread_join(threads2[i], NULL);
-    }
-    clock_gettime(CLOCK_MONOTONIC, &fim);
 
     FILE *file_pthreads2 = fopen("mandelbrot_svv_pthreads2.pgm", "w");
     if(file_pthreads2 == NULL){
-        fprintf(stderr, "erro: não foi possivel abrir o arquivo.\n");
+        fprintf(stderr, "erro: nao foi possivel abrir o arquivo.\n");
         exit(1);
     }
-    
+
+    clock_gettime(CLOCK_MONOTONIC, &inicio);
+
+    mandelbrot_calcula_bruto(array_numeros[ALTURA], array_numeros[LARGURA], array_numeros[MAX_ITERACOES], array_resultado);
+
+    int total_pixels = array_numeros[LARGURA] * array_numeros[ALTURA];
+    pthread_t threads2[array_numeros[NUM_THREADS]];
+    DadosNormalizacao dados_norm[array_numeros[NUM_THREADS]];
+
+    for (int t = 0; t < array_numeros[NUM_THREADS]; t++) {
+        dados_norm[t].inicio = t * (total_pixels / array_numeros[NUM_THREADS]);
+        if (t == array_numeros[NUM_THREADS] - 1) {
+            dados_norm[t].fim = total_pixels;
+        } else {
+            dados_norm[t].fim = (t + 1) * (total_pixels / array_numeros[NUM_THREADS]);
+        }
+        dados_norm[t].max_iter = array_numeros[MAX_ITERACOES];
+        dados_norm[t].array_resultado = array_resultado;
+        dados_norm[t].array_intensidade = array_instensidades;
+
+        pthread_create(&threads2[t], NULL, mandelbrot_pthead2, &dados_norm[t]);
+    }
+
+    for(int i = 0; i < array_numeros[NUM_THREADS]; i++){
+        pthread_join(threads2[i], NULL);
+    }
+
+    clock_gettime(CLOCK_MONOTONIC, &fim);
+
     escreve_pgm(array_numeros[LARGURA], array_numeros[ALTURA], array_instensidades, file_pthreads2);
     fclose(file_pthreads2);
+
     double tempo_pthreads2 = (fim.tv_sec - inicio.tv_sec) + (fim.tv_nsec - inicio.tv_nsec) / 1e9;
     fprintf(file_time, "%lf ", tempo_pthreads2);
     
